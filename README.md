@@ -28,8 +28,8 @@
 
 ## 📂 구성 파일 (Repository Structure)
 * `paper.tex`: 국제 표준 양식의 LaTeX 소스 코드 전문 (Overleaf 등에서 컴파일 가능)
-* `lattice_structure.jpg`: 논문자료1 (자존과 의존 격자의 공유결합 상태도)
-* `lattice_gauge_mapping.jpg`: 논문자료2 (고차원 버퍼 차원과 중심 격자판의 게이지 보정 맵)
+* `m001.jpg`: 논문자료1 (자존과 의존 격자의 공유결합 상태도)
+* `m002.jpg`: 논문자료2 (고차원 버퍼 차원과 중심 격자판의 게이지 보정 맵)
 
 ---
 
