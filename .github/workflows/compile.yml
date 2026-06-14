@@ -5,13 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # 최신 checkout 버전으로 연동
       - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3 # XeLaTeX 컴파일러를 지원하는 최신 버전
         with:
           root_file: main.tex
+          compiler: xelatex # 한글 렌더링을 위해 XeLaTeX 엔진 강제 지정
       - name: Upload PDF Action
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4 # 퇴출당한 v3를 지우고, 최신 v4 규격 적용
         with:
           name: PDF_Paper
           path: main.pdf
