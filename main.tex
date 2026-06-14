@@ -1,10 +1,12 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[kotex]{顕} 
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{hyperref}
+
+% XeLaTeX 및 GitHub Actions 환경에서 한글을 가장 안정적으로 렌더링하는 표준 패키지
+\usepackage{kotex}
 
 \geometry{top=30mm, bottom=30mm, left=25mm, right=25mm}
 
@@ -43,7 +45,7 @@
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.95\textwidth]{m002.png} 
+    \includegraphics[github/lupin-coree/lattice-gauge-polar-cancellation/blob/main/m002.png]{m002.png} 
     \caption{\textbf{고차원 버퍼와 중심 격자판의 게이지 보정 매핑.} 고차원 버퍼 차원에 숨겨둔 극성 보정 수치가 화살표의 궤적을 통해 중심 격자판의 상처 좌표로 복귀하며 전체 균형을 0으로 수축시킨다.}
     \label{fig:lattice2}
 \end{figure}
