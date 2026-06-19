@@ -32,7 +32,7 @@
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{m001.png} 
+    \includegraphics[width=0.85\textwidth]{m003.png} 
     \caption{\textbf{자존 격자와 의존 격자의 공유결합 구조.} 7개의 중심 자존 격자가 자리를 잡으면, 외곽의 12개 의존 격자들은 기하학적 구속 조건에 의해 자동으로 결합된다.}
     \label{fig:lattice1}
 \end{figure}
@@ -52,6 +52,13 @@
 
 \section{격자 기반 암호화 법칙에의 응용}
 본 알고리즘은 정육각형 격자의 정확한 한가운데에 '진짜 비밀 데이터'를 숨기고, 주변 6개 모서리에 가우스 쌍과 극성 보존 법칙($(1, 1, -2)$)을 적용하여 복잡한 무작위 숫자로 위장 분산시키는 방식으로 응용된다. 수신자는 7개 자존 격자를 한 칸씩 미는 슬라이딩 룰과 극성 마디의 열쇠를 통해 중심의 비밀 값을 '0'의 오차 없이 완벽하게 복원해 낸다.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[github/lupin-coree/lattice-gauge-polar-cancellation/blob/main/m002.png]{m001.png} 
+    \caption{\textbf{고차원 버퍼와 중심 격자판의 게이지 보정 매핑.} 고차원 버퍼 차원에 숨겨둔 극성 보정 수치가 화살표의 궤적을 통해 중심 격자판의 상처 좌표로 복귀하며 전체 균형을 0으로 수축시킨다.}
+    \label{fig:lattice3}
+\end{figure}
 
 \section{결론}
 본 논문이 제시한 자존과 의존의 분리, 그리고 경계면 파편의 미세 조율 알고리즘은 사물 이면의 순수한 진동을 투시하는 가장 단순하고 아름다운 규칙이며, 미래의 정보 보안과 시공간 양자화 연구에 영속할 이정표를 제시한다.
