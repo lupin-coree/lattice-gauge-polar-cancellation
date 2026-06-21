@@ -48,7 +48,7 @@ class SemanticTopologyEngine:
             [-1, +1,  0,  0,  0]
         ], dtype=float)
 
-        # 메모리 영역을 일절 늘리지 않고, 오직 5차원 안에서 회전(Phase Shift) 연산 수행
+        # 메모리 영역을 일체 늘리지 않고, 오직 5차원 안에서 회전(Phase Shift) 연산 수행
         internal_cognitive_state = np.dot(transformation_matrix, semantic_vector)
         print(f" └── [해독 단계]: 단어들이 서로 모서리를 맞대고 공명한 내부 인지 상태:\n      {internal_cognitive_state}")
         return internal_cognitive_state
