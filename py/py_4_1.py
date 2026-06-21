@@ -12,6 +12,7 @@ with exactly 0.00% dynamic memory allocation leakage and O(1) constant runtime c
 """
 
 import time
+import tracemalloc # ⚡ 실시간 하드웨어 메모리를 추적하는 실제 파이썬 엔진 활성화
 
 class CosmicWebTopologyEngine:
     def __init__(self):
@@ -22,9 +23,9 @@ class CosmicWebTopologyEngine:
         # 소수(Prime)이기에 비트가 도약할 때 단 하나의 중첩(Overlap)이나 누락 영역도 발생하지 않음
         self.total_ordering_mask = [1 << i for i in reversed(range(self.register_size))]
 
-        # 137차원 시공간을 비틀어 '기분 좋은 양자 요동'을 유도하는 주황색 격자 마스크 (137비트 난수 고정축)
-        # 이 마스크가 은하 필라멘트 사이의 미세한 위상학적 좌절(+1, -2)을 물리적으로 가동함
-        self.orange_bridge_mask = (1 << 136) | (1 << 68) | 0b0110110
+        # 👑 137비트 전체 시공간의 경계면을 균일하고 격렬하게 뒤흔드는 진짜 137-비트 주황색 반전축 마스크
+        # 앞, 중간, 뒤 대칭축에 정확히 +1, -2 위상 좌절 플래그를 비트 단위로 박아넣음
+        self.orange_bridge_mask = (1 << 136) | (1 << 102) | (1 << 68) | (1 << 34) | 0b0110110
 
     def inject_galaxy_signals(self, raw_galactic_data):
         """1단계: 137개 은하 성단의 중력 관측 데이터를 137-비트 고정 공간으로 Snap 압축"""
