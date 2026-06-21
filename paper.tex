@@ -95,7 +95,7 @@
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=\linewidth]{m003}
-        \caption{The finalized 19-hexagon topological matrix establishing mutual exclusivity ($\text{deg} \le 2$), localized polar dynamics ($+1, -2$), and the multi-dimensional boundary channels of peripheral Lattices 8 and 9.}
+        \caption{The finalized 19-hexagon topological matrix establishing mutual exclusivity ($\deg \le 2$), localized polar dynamics ($+1, -2$), and the multi-dimensional boundary channels of peripheral Lattices 8 and 9.}
         \label{fig:m003}
     \end{figure}
 
@@ -141,7 +141,7 @@
     \section{Empirical Benchmark Analysis and Runtime Verification}
     To demonstrate the physical stability and execution profile of the proposed topological architecture under intense cryptographic load, a sequential stress test of 10,000 back-to-back matrix permutations was executed on a bounded 7-bit prime field. Traditional modular exponentiation architectures exhibit asymptotic time complexity scaling at $O(N \log N)$ or worse, accompanied by continuous heap allocation overhead.
 
-    \begin{table}[htbp]
+    \begin{table*}[htbp]
         \caption{Empirical Metric Verification under 10,000 Cycle Stress Test}
         \label{tab:metrics}
         \centering
@@ -157,7 +157,7 @@
             Asymptotic Runtime Complexity & $O(1)$ Bounded Constant Profile \\
             \bottomrule
         \end{tabular}
-    \end{table}
+    \end{table*}
 
     The empirical runtime logs formalized in Table~\ref{tab:metrics} establish absolute physical verification. Throughout the entire 10,000 continuous geometric permutations, the dynamic memory area fluctuation collapsed to exactly $0.00\%$, confirming that the system completely eliminates memory heap allocation overhead. The entire stress pipeline achieved a total execution latency of $4491.10$ microseconds, executing at a stable operational profile of $0.4491$ microseconds per cycle. This hardware-level evaluation completely solidifies the architectural claim of quantum-resistant cryptographic validation via static geometric resonance without CPU scheduling bottlenecks.
 
