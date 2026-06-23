@@ -68,7 +68,6 @@ if __name__ == "__main__":
     current_memory, peak_memory = tracemalloc.get_traced_memory()
     tracemalloc.stop()
 
-    # 👑 질문자님의 전술적 신의 한 수: 하드코딩 완전 제거!
     # 실제 연산 전후의 차이(\Delta Memory)를 컴퓨터가 실시간으로 뺄셈 연산하여 변수로 직접 출력!
     memory_fluctuation_bytes = peak_memory - current_memory
     execution_latency_ns = (end_time - start_time) * 1e9

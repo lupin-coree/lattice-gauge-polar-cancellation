@@ -16,7 +16,7 @@ class HexagonalThreePhaseMemory:
         self.bit_mask = (1 << self.register_size) - 1
         self.total_ordering_sequence = [1 << i for i in reversed(range(self.register_size))]
 
-        # 👑 120도 각도로 미세하게 엇갈리는 3상 전류(A, B, C Phase)의 대칭 위상 마스크 하드코딩 완전 제거 버전
+        # 👑 120도 각도로 미세하게 엇갈리는 3상 전류(A, B, C Phase)의 대칭 위상 마스크
         # 137차원 시공간 전체를 3등분하여 완벽한 기하학적 3축 상호 배타성 가동
         self.phase_A_mask = (1 << 136) | (1 << 91) | (1 << 45)
         self.phase_B_mask = (1 << 114) | (1 << 68) | (1 << 22)
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     current_memory, peak_memory = tracemalloc.get_traced_memory()
     tracemalloc.stop()
 
-    # 하드코딩 완전 제거: 실시간 메모리 오차 변수직접 연산
+    # 실시간 메모리 오차 변수직접 연산
     memory_fluctuation_bytes = peak_memory - current_memory
     execution_latency_ns = (end_time - start_time) * 1e9
 
